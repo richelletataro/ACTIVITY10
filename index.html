@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-con{
+            height: 150px;
+            background-color: cornflowerblue;
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+            flex-direction: row;
+
+        }
+
+        .flex-item{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px;
+            margin:10px;
+        }
+        
+        .ITEM1 {
+            order: 2;
+            flex-grow: 1;
+        }
+
+        .ITEM2 {
+            order: 3;
+            flex-grow: 2;
+        }
+
+        .ITEM3 {
+            order: 1;
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-con">
+        <div class="flex-item ITEM1">Item 1</div>
+        <div class="flex-item ITEM2">Item 2</div>
+        <div class="flex-item ITEM3">Item 3</div>
+    </div>
+    
+</body>
+</html>
